@@ -7,5 +7,12 @@ import { Component } from '@angular/core';
   styleUrl: './hello.scss',
 })
 export class Hello {
+  protected title = 'Welcome to Modern Angular!';
 
+  protected isDisabled = false;
+
+  protected onClick() {
+    console.log('button clicked');
+    this.isDisabled = !this.isDisabled;
+  }
 }
